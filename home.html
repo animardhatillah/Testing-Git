@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Hi, it's me Anii | Tugas DPW 3&4</title> 
+
+    <!-- Connect ke CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="frontend/css/style.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+
+<style>
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+a{
+    font-size: 30px;
+    font-weight: 800;
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/* Setting  posisi menu Nav */
+.menu{
+    float: right;
+}
+
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 70px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #be9da9;
+    z-index: 1;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    padding: 0px 40px 0px 40px;
+    text-decoration: none;
+}
+
+/* Setting efek warna di Nav ketika diklik */
+nav ul li a:hover{
+    background: #876262;
+    text-decoration: none;
+}
+
+.logo{
+    width: 2px;
+    height: 2px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.wrapper .logo img{
+    width: 75px;
+    height: 70px;
+    margin-left: -80px;
+    padding-left: 3px;
+}
+
+/* Setting banner pada web */
+.banner{
+    height: 100vh;
+    border: 1px;
+    background-image: url(../images/an.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #be9da9;;
+}
+
+/* Tulisan besar pada Banner */
+.banner h2{
+    color: #814d4f;
+    z-index: 1;
+    margin-left: 850px;
+    font-size: 65px;
+    font-style: inherit;
+    text-align: right;
+    /* border: 3px solid #c2890e; */
+}
+
+/* Tulisan paragraf di banner */
+.banner .welcome p{
+    color: #814d4f;
+    z-index: 1;
+    padding-top: 5px;
+    text-align: right;
+    font-size: 18px;
+}
+
+/* Setting 2 layout */
+.kolom{
+    width: 50%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row{
+    display: flex;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+/* Setting letak konten deskripsi */
+.kolom p{
+    text-align: center;
+    margin-left: 100px;
+    font-family: 'times new roman';
+    color: black;
+}
+
+/* Setting tombol 2 layout */
+a.button2{
+    background: #be9da9;;
+    border-radius: 50px;
+    margin-left: 220px;
+    padding: 16px 25px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+img{
+    width: 350px;
+    height: 350px;
+    margin-top: 5px;
+    margin-left: 90px;
+}
+
+.kolom h2{
+    margin-left: 100px;
+    font-family: 'times new roman';
+    font-size: 25px;
+    color: #be9da9;;
+}
+
+.kolom .writer{
+    margin-left: 100px;
+    padding-top: 8px;
+    font-family: 'times new roman';
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.kolom .isi{
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.kolom .link{
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    margin-left: 90px;
+    text-align: center;
+}
+
+a.button2:hover{
+    background: #876262;
+    text-decoration: none;
+}
+
+/* Setting letak dan style footer */
+footer{
+    padding: 10px 0;
+    background-color: #be9da9;;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+</style>
+
+</head>
+<body>
+
+<!-- bagian Navigasi -->
+<nav>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="frontend/images/ao.png">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/coba1.html" target="_blank">About Me</a></li>
+                <li><a href="http://127.0.0.1:5500/coba2.html" target="_blank">CV</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Bagian Welcome -->
+<section>
+    <div class="banner">
+    <div class="welcome">
+        <h2>Muslimah Daily Blog</h2>
+        <p>Yang berhijab belum tentu shalihah. Tapi yang shalihah sudah tentu berhijab.</p>
+    </div>
+</div>
+</section>
+
+<!-- Konten Postingan -->
+<section>
+    <div class="row">
+        <!-- Setting agar menjadi 2 layout -->
+        <!-- Lay out 1 -->
+        <div class="kolom">
+            <img src="frontend/images/a.jpg"><br>
+            <br>
+            <h2>Bagaimana Hakikat Wanita Dalam Islam?</h2>
+            <p class="writer">Oleh Ani Mardhatillah</p>
+            <p class="isi">Perempuan adalah makhluk ciptaan Allah yang sangat mulia. Agama Islam meninggikan derajat seorang perempuan sehingga dia menjadi salah satu aspek penting dalam beribadah kepada Allah. Pada dasarnya, perempuan memiliki hak khusus di mana ia harus dimuliakan.<br> ..... </p>
+            <p class="link"><a href="" class="button2">Lanjutkan Membaca</a></p>
+        </div>
+
+        <!-- Lay out 2 -->
+        <div class="kolom">
+            <img src="frontend/images/b.jpg"><br>
+            <br>
+            <h2>Pentingnya Pendidikan Bagi Seorang Muslimah</h2>
+            <p class="writer">Oleh Ani Mardhatillah</p>
+            <p class="isi">Melihat tingginya kedudukan yang diberikan Islam kepada perempuan, maka Islam menekankan pentingnya pendidikan bagi perempuan, Islam tidak melarang perempuan dalam menuntut ilmu asalkan tidak meninggalkan kedudukan mulianya yang telah diberikan Allah kepdanya. <br> .....</p>
+            <p class="link"><a href="" class="button2">Lanjutkan Membaca</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- footer--> 
+<section>
+    <div class="footer">
+        <footer>
+            <p>Copyright 2022 || Ani Mardhatillah <br>
+            Made with ❤ || Pekanbaru</p>
+        </footer>
+    </div>
+</section>
+
+<script src="frontend/scripts/script.js"></script>
+
+</body>
+</html>
